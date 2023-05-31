@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="users.css">
+    <title>Usesrs Information</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar header">
+            <span class="company-name"></span>
+        </div>
+        </div>
+        <div class="mid">
+            <div class="img_area">
+                <p class="welcome">Welcome!!!</p>
+                <p id="p2"></p>
+            </div>
+        </div>
+        <div class="last-button">
+            <button type="button" class="last-button-last" onclick="getData()">Get Users</button>
+        </div>
+    
+    <section id="data">
+        <!-- loader -->
+        <div class="loader">
+            <div></div>
+        </div>
+        <!-- end loader -->
+        <div class="header-container content">
+            <div class="header-container-card-box">
+                <div class="header-container-card">
+                    <div class="card-content-img data">
+                        <img src="" id="img1">
+                    </div>
+                    <div class="card-content-text">
+                        <p id="name1"></p>
+                        <p id="mail1"></p>
+                    </div>
+                </div>
+                <div class="header-container-card data">
+                    <div class="card-content-img">
+                        <img src="" id="img2">
+                    </div>
+                    <div class="card-content-text">
+                        <p id="name2"></p>
+                        <p id="mail2"></p>
+                    </div>
+                </div>
+                <div class="header-container-card data">
+                    <div class="card-content-img">
+                        <img src="" id="img3">
+                    </div>
+                    <div class="card-content-text">
+                        <p id="name3"></p>
+                        <p id="mail3"></p>
+                    </div>
+                </div>
+                </div>
+                <div class="header-container-card-box">
+                <div class="header-container-card data">
+                    <div class="card-content-img">
+                        <img src="" id="img4">
+                    </div>
+                    <div class="card-content-text">
+                        <p id="name4"></p>
+                        <p id="mail4"></p>
+                    </div>
+                </div>
+                <div class="header-container-card data">
+                    <div class="card-content-img">
+                        <img src="" id="img5">
+                    </div>
+                    <div class="card-content-text">
+                        <p id="name5"></p>
+                        <p id="mail5"></p>
+                    </div>
+                </div>
+                <div class="header-container-card data">
+                    <div class="card-content-img">
+                        <img src="" id="img6">
+                    </div>
+                    <div class="card-content-text">
+                        <p id="name6"></p>
+                        <p id="mail6"></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="api.js"></script>
+
+    <script>
+        $(window).on('load',function(){
+            $(".loader").fadeOut(1000);
+            $(".content").fadeIn(1000);
+        });
+    </script>
+</body>
+</html>
